@@ -6,6 +6,7 @@ var mongoose = require('mongoose');
 
 var Item = mongoose.model('Item', {
     name: String,
-    description: String
+    description: String,
+    raw: String
 });
-return module.exports.Item = Item;
+module.exports = Item;

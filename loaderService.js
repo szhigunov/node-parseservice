@@ -10,6 +10,7 @@ var Item = require('./model/Item');
 var lastData = true;
 var obj = {
 		makeRequest: function(url, callback) {
+			console.log('new request')
 			request.get(url, function(error, response, body) {
 					console.log('GET response: ' + response.statusCode);
 					if (!error && response.statusCode == 200) {
@@ -55,9 +56,9 @@ var obj = {
 var counter = 1;
 
 function iterate() {
-	console.log(counter, !!lastData)
+	// console.log(counter, !!lastData); return;
 	obj.makeRequest('http://tabletki.ua/A/' + counter + '/instructions/', obj.processData)
 
 }
-
+console.log('start');
 iterate();
