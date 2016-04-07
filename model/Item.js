@@ -2,11 +2,15 @@
  * Created by szh on 06.10.15.
  */
 
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var Item = mongoose.model('Item', {
-    name: String,
-    description: String,
-    raw: String
+const ItemSchema = new mongoose.Schema({
+  metadata: mongoose.Schema.Types.Mixed,
+  title: 'String',
+  uri: 'String',
+  // description: 'String',
+  raw: 'Buffer',
 });
+
+const Item = mongoose.model('Item', ItemSchema);
 module.exports = Item;
