@@ -8,8 +8,7 @@ const request = Promise.promisifyAll(require('request'));
 const cheerio = require('cheerio');
 const async = require('async');
 // request.debug = true;
-winston.add(winston.transports.File, { filename: 'logfile.log' })
-.remove(winston.transports.Console);
+winston.add(winston.transports.File, { filename: 'logfile.log' });
 winston.level = 'debug';
 /**
 {
@@ -27,20 +26,25 @@ class Parser {
   getUrl(x) {
     return this.config.pattern.replace('%i', x);
   }
-  storeResponse(res, Model) {
+  storeResponse(res, Model, id) {
     const { headers, request: { uri, method, headers: requestHeaders } } = res;
     const metadata = { headers, request: { uri, method, requestHeaders } };
-    const title = cheerio.load(res.body)('title').text().trim();
-    const newItem = new Model({ raw: res.body, metadata, title });
+    const $body = cheerio.load(res.body);
+    const title = $body('title').text().trim().split('|')[0];
+    const descriptionData = this.config.parseRootFn($body(this.config.rootEl));
+    const {description} = descriptionData;
+    const newItem = new Model({ metadata, fetchId: id, title, descriptionData, description });
 
     if (!this.config.dryRun) {
       newItem.save((err) => {
         if (err) {
-          winston.log('debug', 'Error when saving', err);
+          winston.info('Error when saving', err);
         } else {
-          winston.log('debug', 'Saved successfully', title);
+          winston.info('Saved successfully', title);
         }
       });
+    }else {
+      winston.log('debug', 'dryRun is ON!', title)
     }
   }
   run(x) {
@@ -52,7 +56,7 @@ class Parser {
     };
 
     this.doRequest(url, (res) => {
-      this.storeResponse(res, this.config.model);
+      this.storeResponse(res, this.config.model, x);
     }, onError);
   }
   runUntil(start) {
@@ -64,12 +68,12 @@ class Parser {
       request.getAsync(url).then((res) => {
         i++;
         if (res.statusCode === 200) {
-          const title = cheerio.load(res.body)('title').text().trim();
-          winston.log('debug', `${i} : got 200: ${title}`);
-          this.storeResponse(res, this.config.model);
+
+          this.storeResponse(res, this.config.model, i);
+
           failureCount = 0; // Reset failure count, because of 200
         } else { // 404 & 500 & etc.
-          winston.log('debug', 'Failure at ${i}');
+          winston.log('debug', 'Failure at ${i}, status code: ${res.statusCode}');
           failureCount++; // Iterate failure, when 10 repating failures. exit
         }
         callback(null, i);
@@ -86,16 +90,18 @@ class Parser {
 
   doRequest(url, onSuccessCb, onErrorCb) {
     function onError(e) {
-      console.log(e.code, `${e.address} : ${e.port}`);
+      winston.info(e.code, `${e.address} : ${e.port}`);
       onErrorCb();
     }
 
     function onSuccess(res) {
-      console.log('${x} | got status: %s', res.statusCode);
-      onSuccessCb(res);
+      winston.info(`Request success, got status: ${res.statusCode}`);
+      if(res.statusCode === 200) {
+        onSuccessCb(res);
+      }
     }
 
-    request.getAsync(url).then(onSuccess).error(onError);
+    request.getAsync({url}).then(onSuccess).error(onError);
   }
 }
 

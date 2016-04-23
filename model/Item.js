@@ -2,13 +2,15 @@
  * Created by szh on 06.10.15.
  */
 
-const mongoose = require('mongoose');
+const mongoose = require('../db/mongoose.js');
 
 const ItemSchema = new mongoose.Schema({
   metadata: mongoose.Schema.Types.Mixed,
   title: 'String',
+  fetchId: 'Number',
   uri: 'String',
-  // description: 'String',
+  descriptionData: 'Mixed',
+  description: 'String',
   raw: 'Buffer',
 });
 

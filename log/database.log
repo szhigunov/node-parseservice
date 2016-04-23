@@ -1,0 +1,68 @@
+{"level":"info","message":"we're connected!","timestamp":"2016-04-19T18:10:29.358Z"}
+{"level":"error","message":"connection error: @{err.message}","timestamp":"2016-04-21T19:51:45.817Z"}
+{"level":"error","message":"connection error: @{message}","timestamp":"2016-04-21T19:53:57.397Z"}
+{"level":"error","message":"connection error: getaddrinfo ENOTFOUND undefined undefined:27017","timestamp":"2016-04-21T20:01:19.370Z"}
+{"level":"error","message":"connection error: getaddrinfo ENOTFOUND NaN NaN:27017","timestamp":"2016-04-23T20:13:44.334Z"}
+{"level":"error","message":"connection error: getaddrinfo ENOTFOUND NaN NaN:27017","timestamp":"2016-04-23T20:18:49.412Z"}
+{"level":"error","message":"connection error: getaddrinfo ENOTFOUND NaN NaN:27017","timestamp":"2016-04-23T20:21:42.669Z"}
+{"level":"error","message":"connection error: getaddrinfo ENOTFOUND NaN NaN:27017","timestamp":"2016-04-23T20:23:00.543Z"}
+{"level":"error","message":"connection error: getaddrinfo ENOTFOUND NaN NaN:27017","timestamp":"2016-04-23T20:23:48.615Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T20:27:43.016Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:41:18.880Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:41:19.468Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:42:18.792Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:42:19.443Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:43:21.133Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:43:21.750Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:44:08.241Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:46:07.631Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:46:36.721Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:46:37.370Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:48:50.155Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:48:50.735Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:51:08.150Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:51:08.817Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:51:40.439Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:51:41.035Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:53:12.745Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:53:23.249Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:53:23.835Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:53:38.908Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:53:39.548Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:54:12.382Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:58:05.516Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:58:06.232Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T21:59:24.074Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T21:59:24.855Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:07:31.651Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:07:32.309Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:10:30.425Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:10:31.018Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:16:25.656Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:16:26.318Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:17:04.364Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:17:04.961Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:17:53.572Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:17:54.199Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:18:36.382Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:18:36.976Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:18:50.389Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:18:51.026Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:19:01.952Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:19:02.631Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:20:26.960Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:20:27.548Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:22:46.060Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:22:46.789Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:23:40.313Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:23:41.083Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:27:14.536Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:27:15.154Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:27:56.316Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:27:56.939Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:29:01.028Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:29:01.723Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:30:16.196Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:30:16.920Z"}
+{"level":"info","message":"connecting to mongodb://localhost/testdebug","timestamp":"2016-04-23T22:31:35.922Z"}
+{"level":"info","message":"connected to database!","timestamp":"2016-04-23T22:31:36.016Z"}
