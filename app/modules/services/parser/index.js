@@ -42,6 +42,7 @@ const parser = new Parser(config);
 */
 // parser.run(100);
 // parser.runRange(1000, 1050);
+// parser.runUntil(21000);
 parser.runUntil(1);
 
 /*
